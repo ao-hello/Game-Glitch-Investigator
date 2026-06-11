@@ -1,5 +1,3 @@
-# FIXME: easier the mode, smaller the range
-# logic refactored into logic_utils.py using Claude Code
 def get_range_for_difficulty(difficulty: str):
     """Return (low, high) inclusive range for a given difficulty."""
     if difficulty == "Easy":
@@ -33,8 +31,7 @@ def parse_guess(raw: str):
 
     return True, value, None
 
- # FIXME: swapped logic
- # logic refactored into logic_utils.py using Claude Code
+
 def check_guess(guess, secret):
     """
     Compare guess to secret and return (outcome, message).
@@ -57,9 +54,7 @@ def check_guess(guess, secret):
             return "Too High", "📈 Go HIGHER!"
         return "Too Low", "📉 Go LOWER!"
 
-# FIXME: for every 2nd attempt, if input > target, 
-# user gets rewarded with points instead of penalized
-# logic refactored into logic_utils.py using Claude Code
+
 def update_score(current_score: int, outcome: str, attempt_number: int):
     """Update score based on outcome and attempt number."""
     if outcome == "Win":
