@@ -26,7 +26,7 @@ It wrote the code, ran away, and now the game is unplayable.
 ## 📝 Document Your Experience
 
 - [ ] Describe the game's purpose.
-   This is a game application where you're supposed to guess the secret number and use the hints to get you closer to the correct answer.
+   -This is a game application where you're supposed to guess the secret number and use the hints to get you closer to the correct answer.
 - [ ] Detail which bugs you found.
    1. The logic of the hints were swapped.
    2. For every 2nd attempt you did, your answer would be converted to a string instead of staying as a number.
